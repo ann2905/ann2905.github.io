@@ -63,26 +63,26 @@
 		}
 		#p3{
 			clear:both;
-			margin : 5% 7% 5% 7%;
-			width: 86%;
+			margin : 5% 1% 5% 1%;
+			width: 98%;
 		}
 	}
 
 	@media(max-width: 550px){
 		#p1{
-			width: 86%;
-			margin: 5% 7% 5% 7%;
+			width: 98%;
+			margin: 5% 1% 5% 1%;
 			clear:both;
 		}
 
 		#p2{
-			width: 86%;
-			margin: 5% 7% 5% 7%;
+			width: 98%;
+			margin: 5% 1% 5% 1%;
 			clear:both;
 		}
 		#p3{
-			width: 86%;
-			margin: 5% 7% 5% 7%;
+			width: 98%;
+			margin: 5% 1% 5% 1%;
 			clear:both;
 		}
 	}
