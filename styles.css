@@ -1,0 +1,186 @@
+/*####################GENERAL#####################*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav,header,footer {
+    display:block;
+    
+}
+
+body{
+    line-height: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+/*###################NAVBAR######################*/
+
+nav{
+   width: 100%;
+}
+
+.jas{
+    background-color: gray;
+    overflow:hidden;/*for collapse of navbar*/
+}
+
+nav li{
+    float:left;
+    list-style: none;
+
+    border-right: 1px solid white;
+} 
+
+nav ul li.right{
+    float:right;
+}
+
+nav a{
+    text-decoration: none;
+    color: blue;
+    min-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+     display: block;
+padding:10px;
+}
+
+ul a:hover{
+    background-color: darkblue;
+    color: red;
+}
+
+.dropdown{
+    display: none;
+}
+
+/*##################FORM STYLE################*/
+
+.container{
+    margin: auto;
+    width: 100%;
+    padding: 4% 0px; 
+}
+
+#comeon{
+    
+     background: blue;  /*for browsers that dont support gradients*/
+    background: -webkit-linear-gradient(mediumblue,dodgerblue);/*for safari and also chrome*/
+    background: -o-linear-gradient(mediumblue,dodgerblue);/*for operamini*/
+    background: linear-gradient(mediumblue,dodgerblue);/*standard*/
+    
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content: ""
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+.leftside{
+    margin-left: 30%;
+}
+
+.leftside2{
+    margin-left: 15%;
+}
+.large{
+    margin: 0;
+    color: aliceblue;
+    font-size: 50px;
+    line-height: 70px;
+}
+
+input[type="text"]{
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    width: 60%;
+    min-width: 100px;
+}
+
+h2{
+    color: aliceblue;
+    font-size: 25px;
+}
+
+
+/*###################MOBILE##################*/
+
+@media (max-width: 680px){
+    nav li:not(:nth-child(1)){
+        display: none;
+    }
+    
+    nav li:nth-child(6){
+        display: block;
+    }
+    
+   li.dropdown{
+        float: right;
+    }
+    
+    ul.jas.responsive li.dropdown{
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+    
+/*    ul.js.responsive{
+/*        position: relative;*/
+/*    } 
+    
+    
+    this  above relative dosent show any difference */
+    
+    
+    
+   ul.jas.responsive li{
+        display: block;
+        float: none;
+/*        border: none;*/
+    }
+       
+    ul.jas.responsive li a{
+        display: block;
+        text-align: left;
+    }
+    
+    .col-6{
+        width: 100%;
+    }
+    
+    .leftside,.leftside2{
+        margin: 10px;
+    }
+
+ .videocontainer iframe{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+}
