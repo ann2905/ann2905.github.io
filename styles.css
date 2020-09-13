@@ -127,10 +127,19 @@ h2{
     font-size: 25px;
 }
 
+iframe{
+    width: 90%;
+    height: 315px;
+}
+.videocontainer{
+    
+    width: 100%;
+}
+
 
 /*###################MOBILE##################*/
 
-@media (max-width: 1000px){
+@media only screen and (max-width: 680px){
     nav li:not(:nth-child(1)){
         display: none;
     }
@@ -183,4 +192,6 @@ h2{
         height: 100%;
         overflow: hidden;
     }
+    
+    
 }
