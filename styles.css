@@ -130,7 +130,7 @@ h2{
 
 /*###################MOBILE##################*/
 
-@media (max-width: 680px){
+@media (max-width: 1000px){
     nav li:not(:nth-child(1)){
         display: none;
     }
